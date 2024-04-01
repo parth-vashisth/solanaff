@@ -77,3 +77,11 @@
     text-align: center;
     color: red;
 }
+
+.bg-img {
+    background-image: url(../images/sec-1\ bgimg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 50vh;
+}
