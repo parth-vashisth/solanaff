@@ -46,8 +46,13 @@
 .menu {
     background: #F6E300;
     width: 100%;
-    padding: 8px;
+    padding: 4px;
     background-size: cover;
+    position: fixed;
+    z-index: 10;
+}
+.f-direction-col-rev{
+    flex-direction: column-reverse;
 }
 
 .w-100 {
@@ -221,6 +226,10 @@
     position: relative;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 .sec-4-head {
     font-family: "Poppins", sans-serif;
     font-size: 48px;
@@ -343,7 +352,7 @@
 
 .text-accordion {
     position: absolute;
-    top: -150%;
+    top: -175%;
     left: 0%;
     padding: 20px;
 }
@@ -432,10 +441,10 @@
 } */
 
 .open-logo {
-    top: 55%;
+    top: 26%;
     position: absolute;
-    right: 39%;
-    width: 25%;
+    right: 25%;
+    width: 50%;
 }
 
 .sec-7-head {
@@ -555,6 +564,18 @@
     padding-bottom: 38px;
 }
 
+.brgr2,
+.brgr5,
+.brgr8,
+.brgr3,
+.brgr1,
+.brgr5,
+.brgr4,
+.brgr6,
+.brgr7 {
+    display: none;
+}
+
 .main-head {
     font-family: "Poppins", sans-serif;
     font-size: 48px;
@@ -574,6 +595,37 @@
     overflow: hidden;
 }
 
+.lg-view {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .lg-view {
+        position: fixed;
+        width: 100%;
+        height: 102vh;
+        top: 0;
+        left: -150%;
+        background-color: #F6E300;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        transition: 0.5s;
+        gap: 20px;
+    }
+
+    .nav-icon {
+        z-index: 4;
+    }
+
+    .show {
+        left: 0%;
+    }
+
+}
+
 @media (min-width:576px) {
     .col-sm-6 {
         width: 50%;
@@ -583,6 +635,10 @@
 
     .dot-right::after {
         left: 2px;
+    }
+
+    .open-logo {
+        top: 35%;
     }
 
 
@@ -612,6 +668,13 @@
     .dot-right::after {
         left: 6px;
     }
+
+    .open-logo {
+        top: 40%;
+    }
+    .f-direction-row{
+        flex-direction: row;
+    }
 }
 
 @media (min-width:992px) {
@@ -621,7 +684,15 @@
         padding-right: 12px;
     }
 
+    .open-logo {
+        width: 30%;
+        top: 53%;
+        right: 37%;
+    }
 
+    .w-85 {
+        width: 85%;
+    }
 
     .dot-left::after {
         content: '';
@@ -647,6 +718,13 @@
         z-index: 1;
     }
 
+    .lg-view {
+        display: flex;
+    }
+
+    .nav-icon {
+        display: none;
+    }
 
 
     .timeline {
@@ -670,5 +748,9 @@
 
     .w-50 {
         width: 50%;
+    }
+
+    .w-lg-70 {
+        width: 70%;
     }
 }
