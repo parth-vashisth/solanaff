@@ -51,7 +51,8 @@
     position: fixed;
     z-index: 10;
 }
-.f-direction-col-rev{
+
+.f-direction-col-rev {
     flex-direction: column-reverse;
 }
 
@@ -65,6 +66,10 @@
 
 .justify-center {
     justify-content: center;
+}
+
+.z-index {
+    z-index: 1;
 }
 
 .f-direction-col {
@@ -567,12 +572,7 @@
 .brgr2,
 .brgr5,
 .brgr8,
-.brgr3,
-.brgr1,
-.brgr5,
-.brgr4,
-.brgr6,
-.brgr7 {
+.brgr3 {
     display: none;
 }
 
@@ -672,7 +672,8 @@
     .open-logo {
         top: 40%;
     }
-    .f-direction-row{
+
+    .f-direction-row {
         flex-direction: row;
     }
 }
@@ -692,6 +693,13 @@
 
     .w-85 {
         width: 85%;
+    }
+
+    .brgr2,
+    .brgr5,
+    .brgr8,
+    .brgr3 {
+        display: flex;
     }
 
     .dot-left::after {
